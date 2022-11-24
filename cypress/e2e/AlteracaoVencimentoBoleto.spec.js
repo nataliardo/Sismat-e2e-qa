@@ -11,6 +11,9 @@ describe('Alteração de vencimento de Boletos', () => {
             cy.visit('https://homolog-pensi.gestaoeleva.com.br/modules/students/dUJ1SExkQVZUNk01TlNrUnQwMnc5cTRNSkRRekxTOFcrRFJXNmRTcGptWHQ1VHVkVVdrPQ/view/personal-data/dUJ1SExkQVZUNk01TlNrUnQwMnc5cWdOSnpoQW1SNE9scUtzTlUwYi9HQXZpdCtF')
             cy.get('#tabServicescommitments_').click()
             cy.wait(8_000)
+            // aqui colocar a condição do status em aberto
+           // cy.wait(8_000)
+            //cy.get(':nth-child(13) > :nth-child(4) > .status-name-badge > span').should('Em aberto')
             cy.get(':nth-child(6) > .text-top > .border-drop-down > app-dropdown > app-dropdown-target > .fas').click()
             cy.wait(4_000)
             cy.get('.app-button > div > img').click()

@@ -11,7 +11,7 @@ describe('Edição de Dados do RF', () => {
             //cy.wait(60_000)
             cy.visit('/?url=https://homolog-pensi.gestaoeleva.com.br/')
             cy.get('.pull-left > .toolbar-item').click()
-            cy.visit('https://homolog-pensi.gestaoeleva.com.br/modules/students/dUJ1SExkQVZUNk01TlNrUnQwMnc5cWtBTGpZM0xvWmRMK2FHQ2g1cEMyTUZjbnIzTUZnPQ/view/personal-data/dUJ1SExkQVZUNk01TlNrUnQwMnc5cWdOSnpoQW1SNE9scUtzTlUwYi9HQXZpdCtF')
+            cy.visit('https://homolog-pensi.gestaoeleva.com.br/modules/students/dUJ1SExkQVZUNk01TlNrUnQwMnc5cTRNSkRRekxTOFcrRFJXNmRTcGptWHQ1VHVkVVdrPQ/view/personal-data/dUJ1SExkQVZUNk01TlNrUnQwMnc5cWdOSnpoQW1SNE9scUtzTlUwYi9HQXZpdCtF')
             cy.get('#tabResponsibles_').click()
             cy.get(':nth-child(1) > app-panel-header > .default-layout-type > app-button.ng-star-inserted > .default-theme > .app-button > .fa-pencil').click()
             cy.wait(5_000)
